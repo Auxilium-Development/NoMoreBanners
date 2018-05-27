@@ -4,8 +4,7 @@
 %hook SKUIBannerView
 
 -(void)layoutSubviews {
-	%orig;
-	self.hidden = YES;
+	self.backgroundColor = [UIColor clearColor];
 }
 
 %end
